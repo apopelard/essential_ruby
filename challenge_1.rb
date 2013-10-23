@@ -15,6 +15,7 @@
 
 def pmt(interest_rate,  number_of_payments, present_value)
   monthly_payment = ((present_value * interest_rate) / (1 - (1 + interest_rate) ** -number_of_payments))
-  return "$ #{monthly.payment.round(2)}"
+  return "$#{monthly_payment.round(2)}"
+end
 
-puts "Your monthly payment will be #{pmt(0.01, 60, 30000)}."
+puts "Your monthly payment will be #{pmt(0.01, 60, 30000)}"
